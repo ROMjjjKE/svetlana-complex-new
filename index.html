@@ -67,9 +67,9 @@ nav.main a.on{color:var(--ink);background:var(--acc);font-weight:700}
 /* ===== 3D hero ===== */
 .hero{min-height:100vh;position:relative;overflow:hidden;display:flex;align-items:center;padding:120px 0 60px;perspective:1100px}
 .hero-bg{position:absolute;inset:-4%;z-index:0;transform-style:preserve-3d;will-change:transform}
-.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.34;filter:saturate(.7) brightness(.62)}
-.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,22,28,.25) 0%,rgba(20,22,28,.55) 55%,var(--ink) 100%)}
-.hero-vig{position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse at 62% 38%,transparent 30%,rgba(20,22,28,.78) 92%)}
+.hero-bg{background:url("img/hero_bg.jpg") center 30%/cover no-repeat;opacity:.62}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,22,28,.05) 0%,rgba(20,22,28,.42) 58%,var(--ink) 100%)}
+.hero-vig{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(20,22,28,.78) 0%,rgba(20,22,28,.52) 48%,rgba(20,22,28,.12) 78%,transparent 100%),radial-gradient(ellipse at 62% 38%,transparent 34%,rgba(20,22,28,.6) 94%)}
 .hero .wrap{position:relative;z-index:2;width:100%}
 .hero h1{font-size:clamp(44px,8.4vw,124px);letter-spacing:.02em}
 .hero h1 .lv{color:var(--acc)}
@@ -218,7 +218,7 @@ section.blk{padding:64px 0}
 <!-- ===================== HOME ===================== -->
 <main id="p-home" class="page on">
 <section class="hero">
-  <div class="hero-bg" id="herobg"><img src="img/lounge_hero.jpg" alt="Гостиничный комплекс Светлана ночью" fetchpriority="high"></div>
+  <div class="hero-bg" id="herobg"></div>
   <div class="hero-vig"></div>
   <div class="wrap">
     <span class="h-kick"><i></i>Пн–Вс · 07:00–01:00 · 420-й км трассы М-10</span>
