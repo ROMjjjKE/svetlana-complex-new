@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ГК «Светлана» — гостиница, кафе, банкетный зал, лаунж и SPA у трассы М-10 · Пинск</title>
+<meta name="description" content="Гостиничный комплекс «Светлана» (Пинский район, 420-й км М-10): отель на 20 номеров, кафе до 150 гостей, банкетный зал с караоке, паркинг на 75 мест, СветланаЛаунж с ротондой и SvetlanaSPA с джакузи. Круглосуточно. +375 44 756-05-55">
+<script>window.__ok=0;</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14161C;--ink2:#1B1E26;--ink3:#232733;--paper:#F5EFE6;--cream:#EFE6D8;--mut:#9AA0AC;--mut2:#6E7480;--acc:#FF7A59;--accD:#E85F3C;--accT:rgba(255,122,89,.14);--line:rgba(245,239,230,.13);--serif:'Yeseva One',Georgia,serif;--sans:'Ubuntu',system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--ink);color:var(--paper);overflow-x:hidden;font-size:16.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.disp{font-family:var(--serif);font-weight:400;line-height:1.12}
+.mono{font-family:ui-monospace,'Cascadia Mono','Courier New',monospace}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+::selection{background:var(--acc);color:var(--ink)}
+.wm{position:fixed;inset:0;z-index:9998;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='460' height='300'%3E%3Ctext x='40' y='150' font-size='26' fill='%234338ca' opacity='.10' font-family='monospace' transform='rotate(-24 40 150)'%3ESiteFast.by%3C/text%3E%3C/svg%3E")}
+.wbadge{position:fixed;right:14px;bottom:14px;z-index:9999;background:#4338ca;color:#fff;font:700 11px/1 var(--sans);padding:7px 10px;border-radius:6px;opacity:.85}
+.wrap{max-width:1240px;margin:0 auto;padding:0 26px}
+/* ===== ПРЕЛОАДЕР ===== */
+#loader{position:fixed;inset:0;z-index:10001;background:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;transition:clip-path .9s cubic-bezier(.83,0,.17,1);clip-path:inset(0 0 0 0)}
+#loader.done{clip-path:inset(0 0 100% 0);pointer-events:none}
+.ld-word{display:flex;gap:.06em;font-family:var(--serif);font-size:clamp(34px,7vw,84px);color:var(--paper)}
+.ld-word span{opacity:0;transform:translateY(28px) rotateX(60deg);display:inline-block;animation:ldin .7s cubic-bezier(.16,1,.3,1) forwards}
+.ld-word span.gap{width:.4em}
+.ld-word .lv{color:var(--acc)}
+@keyframes ldin{to{opacity:1;transform:none}}
+.ld-sub{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--mut);opacity:0;animation:ldin .6s .9s forwards}
+.ld-bar{width:min(320px,70vw);height:1px;background:var(--line);position:relative;overflow:hidden;opacity:0;animation:ldin .6s .5s forwards}
+.ld-bar i{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--acc);transition:width .25s}
+.ld-pct{font-size:11px;letter-spacing:.2em;color:var(--acc);opacity:0;animation:ldin .6s .5s forwards}
+/* ===== курсор ===== */
+.cur-dot,.cur-ring{display:none}
+@media(pointer:fine){
+.cur-dot{display:block;position:fixed;z-index:10000;width:7px;height:7px;border-radius:50%;background:var(--acc);pointer-events:none;transform:translate(-50%,-50%)}
+.cur-ring{display:block;position:fixed;z-index:10000;width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(255,122,89,.65);pointer-events:none;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s}
+.cur-ring.big{width:58px;height:58px;border-color:var(--acc)}
+}
+/* ===== шапка ===== */
+header{position:fixed;top:0;left:0;right:0;z-index:900;background:linear-gradient(rgba(20,22,28,.92),rgba(20,22,28,.55));backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.hrow{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 26px;max-width:1240px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:12px;min-width:0}
+.logo .lg-t{font-family:var(--serif);font-size:21px;white-space:nowrap}
+.logo .lg-t i{font-style:normal;color:var(--acc)}
+.logo .lg-s{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--mut);white-space:nowrap}
+nav.main{display:flex;gap:4px;flex-wrap:wrap}
+nav.main a{font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:8px 11px;border-radius:8px;color:var(--mut);transition:.2s;white-space:nowrap}
+nav.main a:hover{color:var(--paper)}
+nav.main a.on{color:var(--ink);background:var(--acc);font-weight:700}
+.hcall{display:flex;gap:10px;align-items:center}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:9px;padding:9px 10px;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:var(--paper);margin:4px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:13px;letter-spacing:.05em;padding:12px 20px;border-radius:999px;transition:.25s;cursor:pointer;border:none;font-family:var(--sans)}
+.btn-acc{background:var(--acc);color:var(--ink)}
+.btn-acc:hover{background:var(--paper)}
+.btn-ghost{border:1.5px solid rgba(245,239,230,.35);color:var(--paper)}
+.btn-ghost:hover{border-color:var(--acc);color:var(--acc)}
+/* ===== страницы (роутер) ===== */
+.page{display:none}
+.page.on{display:block;animation:pgin .7s cubic-bezier(.16,1,.3,1)}
+@keyframes pgin{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+/* ===== 3D hero ===== */
+.hero{min-height:100vh;position:relative;overflow:hidden;display:flex;align-items:center;padding:120px 0 60px;perspective:1100px}
+.hero-bg{position:absolute;inset:-4%;z-index:0;transform-style:preserve-3d;will-change:transform}
+.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.34;filter:saturate(.7) brightness(.62)}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,22,28,.25) 0%,rgba(20,22,28,.55) 55%,var(--ink) 100%)}
+.hero-vig{position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse at 62% 38%,transparent 30%,rgba(20,22,28,.78) 92%)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero h1{font-size:clamp(44px,8.4vw,124px);letter-spacing:.02em}
+.hero h1 .lv{color:var(--acc)}
+.h-kick{display:inline-flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--mut);border:1px solid var(--line);border-radius:999px;padding:9px 16px;margin-bottom:28px;background:rgba(20,22,28,.4);backdrop-filter:blur(6px)}
+.h-kick i{width:8px;height:8px;border-radius:50%;background:var(--acc);animation:blink 1.8s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+.h-sub{max-width:600px;font-size:18px;font-weight:300;color:#D9D2C4;margin-top:22px}
+.h-sub b{color:var(--acc);font-weight:500}
+.h-cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+/* 3D карточки-зоны на главной */
+.zones{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:58px;perspective:1200px}
+.zcard{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/4.6;background:var(--ink2);border:1px solid var(--line);transform-style:preserve-3d;transition:transform .2s ease-out,border-color .3s;cursor:pointer}
+.zcard:hover{border-color:rgba(255,122,89,.55)}
+.zcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.6;transition:opacity .4s,transform .6s cubic-bezier(.16,1,.3,1);transform:scale(1.04)}
+.zcard:hover img{opacity:.85;transform:scale(1.1)}
+.zcard .zc-b{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(20,22,28,.94) 92%)}
+.zcard .zc-t{position:absolute;left:20px;right:20px;bottom:18px;transform:translateZ(40px)}
+.zcard .zc-t h3{font-size:22px}
+.zcard .zc-t p{font-size:12.5px;color:var(--mut);margin-top:4px}
+.zcard .zc-n{position:absolute;top:14px;left:16px;font-size:10.5px;letter-spacing:.22em;color:rgba(245,239,230,.75);background:rgba(20,22,28,.55);padding:6px 11px;border-radius:999px;backdrop-filter:blur(6px);transform:translateZ(30px)}
+.zcard .zc-arr{position:absolute;top:14px;right:16px;width:34px;height:34px;border-radius:50%;background:var(--acc);color:var(--ink);display:flex;align-items:center;justify-content:center;font-weight:700;transform:translateZ(50px);transition:.25s}
+.zcard:hover .zc-arr{transform:translateZ(50px) rotate(45deg)}
+/* бегущая строка */
+.marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:15px 0;background:var(--ink2);margin-top:64px}
+.mq-t{display:flex;width:max-content;animation:mq 30s linear infinite}
+.mq-t span{font-family:var(--serif);font-size:15px;letter-spacing:.06em;padding:0 30px;white-space:nowrap;color:var(--mut)}
+.mq-t span i{font-style:normal;color:var(--acc);margin-left:30px}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* секции */
+section.blk{padding:96px 0;position:relative}
+.blk.tint{background:var(--ink2)}
+.kick{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--acc);margin-bottom:16px;display:flex;align-items:center;gap:12px}
+.kick::before{content:'';width:40px;height:1px;background:var(--acc)}
+h2{font-size:clamp(28px,4.6vw,54px);margin-bottom:18px}
+h2 em{font-style:normal;color:var(--acc)}
+.lead{font-size:17.5px;font-weight:300;color:#C9C2B4;max-width:720px;margin-bottom:36px}
+.lead b{color:var(--paper);font-weight:500}
+.fx{opacity:0;transform:translateY(26px)}
+body.js .fx{transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+body.js .fx.in{opacity:1;transform:none}
+.fx.d1{transition-delay:.08s}.fx.d2{transition-delay:.16s}.fx.d3{transition-delay:.24s}.fx.d4{transition-delay:.32s}.fx.d5{transition-delay:.4s}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.c3{grid-column:span 3}.c4{grid-column:span 4}.c6{grid-column:span 6}.c8{grid-column:span 8}.c12{grid-column:span 12}
+.card{background:var(--ink3);border:1px solid var(--line);border-radius:16px;padding:26px;transition:transform .35s cubic-bezier(.16,1,.3,1),border-color .3s;transform-style:preserve-3d}
+.card:hover{border-color:rgba(255,122,89,.4)}
+.card h3{font-size:19px;margin-bottom:10px}
+.card p{font-size:14px;color:var(--mut);line-height:1.65}
+.card .ic{width:44px;height:44px;border-radius:12px;background:var(--accT);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+ul.tick{list-style:none;display:grid;gap:10px}
+ul.tick li{display:flex;gap:12px;font-size:15px;color:#D9D2C4;font-weight:300}
+ul.tick li::before{content:'—';color:var(--acc);font-weight:700}
+/* фото-полосы */
+.ph-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ph-strip .ph{border-radius:14px;overflow:hidden;position:relative;background:var(--ink3)}
+.ph-strip .ph img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.ph-strip .ph:hover img{transform:scale(1.07)}
+.ph-big{border-radius:18px;overflow:hidden;position:relative}
+.ph-big img{width:100%;display:block}
+.ph-cap{position:absolute;left:16px;bottom:14px;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;background:rgba(20,22,28,.62);backdrop-filter:blur(6px);padding:7px 12px;border-radius:999px}
+/* hero-баннеры страниц */
+.phero{position:relative;min-height:62vh;display:flex;align-items:flex-end;padding:130px 0 46px;overflow:hidden;margin-top:0}
+.phero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.4;filter:saturate(.8) brightness(.68)}
+.phero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,22,28,.42) 0%,transparent 40%,var(--ink) 100%)}
+.phero .wrap{position:relative;z-index:2;width:100%}
+.phero h1{font-size:clamp(34px,5.6vw,74px)}
+.phero .lead{margin-bottom:0}
+/* faq */
+.faq details{background:var(--ink3);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:19px 24px;font-weight:500;font-size:15.5px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pl{flex:none;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--acc);color:var(--acc);display:flex;align-items:center;justify-content:center;transition:.25s;font-size:15px}
+.faq details[open] .pl{background:var(--acc);color:var(--ink);transform:rotate(45deg)}
+.faq .fa{padding:0 24px 18px;font-size:14.5px;color:var(--mut);line-height:1.7}
+/* контакты */
+.con{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.crow{display:flex;gap:12px;font-size:15px;color:var(--mut);margin-bottom:10px;flex-wrap:wrap}
+.crow b{color:var(--paper)}
+.ctel a{display:flex;align-items:center;gap:13px;font-family:var(--serif);font-size:19px;padding:15px 18px;border:1px solid var(--line);border-radius:13px;transition:.25s;margin-bottom:11px}
+.ctel a:hover{border-color:var(--acc);background:var(--accT)}
+form .frm{display:grid;gap:13px}
+form label{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);display:block;margin-bottom:6px;font-weight:500}
+form input,form select,form textarea{width:100%;background:rgba(245,239,230,.05);border:1px solid var(--line);border-radius:11px;padding:13px 15px;font-size:15.5px;font-family:var(--sans);color:var(--paper)}
+form input:focus,form select:focus,form textarea:focus{outline:none;border-color:var(--acc)}
+form select option{color:var(--ink)}
+form textarea{min-height:96px;resize:vertical}
+.ok-msg{display:none;background:var(--accT);color:var(--acc);border:1px solid rgba(255,122,89,.5);border-radius:11px;padding:13px 15px;font-size:14px;font-weight:500}
+footer{border-top:1px solid var(--line);padding:40px 0 120px;font-size:13.5px;color:var(--mut2);background:var(--ink)}
+.ft{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;margin-bottom:20px}
+.ft a:hover{color:var(--acc)}
+.wm-line{border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.wa-fab{position:fixed;left:16px;bottom:16px;z-index:9990;display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;font-weight:700;font-size:12.5px;padding:13px 20px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.wa-fab:hover{background:#1FB95A}
+@media(max-width:1023px){
+nav.main{position:absolute;top:100%;left:0;right:0;background:var(--ink);border-bottom:1px solid var(--line);flex-direction:column;padding:12px 26px;display:none}
+nav.main.open{display:flex}
+nav.main a{font-size:14px;padding:11px 0}
+.burger{display:block}
+.logo .lg-s{display:none}
+.hcall .btn-ghost{display:none}
+.con{grid-template-columns:1fr}
+.ph-strip{grid-template-columns:repeat(2,1fr)}
+.c3,.c4,.c6,.c8{grid-column:span 12}
+}
+@media(max-width:600px){.hcall{display:none}
+footer{padding-bottom:160px}
+section.blk{padding:64px 0}
+.ph-strip{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body class="">
+<div class="wm"></div>
+<div class="wbadge">МАКЕТ: SiteFast.by</div>
+<div class="cur-dot" id="cdot"></div><div class="cur-ring" id="cring"></div>
+<div id="loader">
+  <div class="ld-word" id="ldword"></div>
+  <div class="ld-sub">гостиничный комплекс · Пинск · М-10 · 420-й км</div>
+  <div class="ld-bar"><i id="ldbar"></i></div>
+  <div class="ld-pct" id="ldpct">0%</div>
+</div>
+
+<header>
+  <div class="hrow">
+    <a href="#home" class="logo">
+      <svg width="38" height="38" viewBox="0 0 40 40" fill="none"><path d="M20 3l4 5h8l-2.5 5.5L34 19l-6 2 1 7-9-3-9 3 1-7-6-2 4.5-5.5L8 8h8z" fill="#FF7A59"/><circle cx="20" cy="18" r="3" fill="#14161C"/></svg>
+      <div><div class="lg-t">СВЕТ<i>ЛАНА</i></div><div class="lg-s">гостиничный комплекс</div></div>
+    </a>
+    <nav class="main" id="nav">
+      <a href="#home" data-r="home" class="on">Главная</a>
+      <a href="#hotel" data-r="hotel">Гостиница</a>
+      <a href="#cafe" data-r="cafe">Кафе</a>
+      <a href="#banquet" data-r="banquet">Банкетный зал</a>
+      <a href="#parking" data-r="parking">Паркинг</a>
+      <a href="#lounge" data-r="lounge">СветланаЛаунж</a>
+      <a href="#spa" data-r="spa">SPA</a>
+      <a href="#contacts" data-r="contacts">Контакты</a>
+    </nav>
+    <div class="hcall">
+      <a href="tel:+375447560555" class="btn btn-ghost">+375 44 756-05-55</a>
+      <a href="#contacts" class="btn btn-acc">Забронировать</a>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== HOME ===================== -->
+<main id="p-home" class="page on">
+<section class="hero">
+  <div class="hero-bg" id="herobg"><img src="img/lounge_hero.jpg" alt="Гостиничный комплекс Светлана ночью" fetchpriority="high"></div>
+  <div class="hero-vig"></div>
+  <div class="wrap">
+    <span class="h-kick"><i></i>Пн–Вс · 07:00–01:00 · 420-й км трассы М-10</span>
+    <h1>СВЕТ<i class="lv">ЛАНА</i></h1>
+    <p class="h-sub">Многофункциональный комплекс у трассы: <b>20 номеров</b> с реновацией 2024 года, кафе на <b>150 гостей</b> с летней террасой, банкетный зал с караоке, охраняемый паркинг на <b>75 мест</b>, лаунж с ротондой и SPA-дом с джакузи.</p>
+    <div class="h-cta">
+      <a href="#hotel" class="btn btn-acc" data-go>Забронировать номер</a>
+      <a href="#spa" class="btn btn-ghost" data-go>SPA-дом за 160 р.</a>
+    </div>
+    <div class="zones" id="zones">
+      <div class="zcard" data-go="#hotel"><img src="img/hotel_hero.jpg" alt="Гостиница Светлана" loading="lazy"><div class="zc-b"></div><span class="zc-n">01 · от 2016 года</span><div class="zc-arr">→</div><div class="zc-t"><h3>Гостиница</h3><p>20 номеров · реновация 2024 · заселение круглосуточно</p></div></div>
+      <div class="zcard" data-go="#cafe"><img src="img/cafe_hero.jpg" alt="Кафе Светлана" loading="lazy"><div class="zc-b"></div><span class="zc-n">02 · 07:00–01:00</span><div class="zc-arr">→</div><div class="zc-t"><h3>Кафе</h3><p>до 150 гостей · терраса с мангалом · банкеты</p></div></div>
+      <div class="zcard" data-go="#banquet"><img src="img/banquet_hero.jpg" alt="Банкетный зал Светлана" loading="lazy"><div class="zc-b"></div><span class="zc-n">03 · 24 места</span><div class="zc-arr">→</div><div class="zc-t"><h3>Банкетный зал</h3><p>караоке · классика · мультимедиа</p></div></div>
+      <div class="zcard" data-go="#parking"><img src="img/park_hero.jpg" alt="Паркинг Светлана" loading="lazy"><div class="zc-b"></div><span class="zc-n">04 · 24/7</span><div class="zc-arr">→</div><div class="zc-t"><h3>Паркинг</h3><p>50 грузовых + 25 легковых · охрана ночью</p></div></div>
+      <div class="zcard" data-go="#lounge"><img src="img/lounge_hero.jpg" alt="СветланаЛаунж" loading="lazy"><div class="zc-b"></div><span class="zc-n">05 · на территории</span><div class="zc-arr">→</div><div class="zc-t"><h3>СветланаЛаунж</h3><p>ротонда · барбекю · фонтан · детская зона</p></div></div>
+      <div class="zcard" data-go="#spa"><img src="img/spa_hero.jpg" alt="SvetlanaSPA" loading="lazy"><div class="zc-b"></div><span class="zc-n">06 · loft</span><div class="zc-arr">→</div><div class="zc-t"><h3>SvetlanaSPA</h3><p>дом до 12 гостей · камин · джакузи · парная</p></div></div>
+    </div>
+    <div class="marquee">
+      <div class="mq-t">
+        <span>Ночлег в пути <i>✦</i> Свадьбы в ротонде <i>✦</i> Корпоративы с караоке <i>✦</i> Джакузи под снегом <i>✦</i> Мангальная зона <i>✦</i> Охраняемая стоянка <i>✦</i> Wi-Fi <i>✦</i> Доставка блюд из кафе <i>✦</i> </span>
+        <span>Ночлег в пути <i>✦</i> Свадьбы в ротонде <i>✦</i> Корпоративы с караоке <i>✦</i> Джакузи под снегом <i>✦</i> Мангальная зона <i>✦</i> Охраняемая стоянка <i>✦</i> Wi-Fi <i>✦</i> Доставка блюд из кафе <i>✦</i> </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blk">
+  <div class="wrap">
+    <div class="kick">Добро пожаловать</div>
+    <h2>Всё для отдыха — <em>в одном месте</em></h2>
+    <p class="lead">Современный отель, уютное кафе с летней террасой, банкетный зал с караоке и охраняемая стоянка. Идеальное место для <b>ночлега в пути</b> и спокойного отдыха — и для свадебных торжеств и корпоративных мероприятий.</p>
+    <div class="grid">
+      <div class="card c4 fx"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A59" stroke-width="1.8"><path d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg></div><h3>Чистота, уют, комфорт</h3><p>Наши принципы — в каждой детали: от натурального постельного белья из 100%-го хлопка до индивидуальной косметики в номерах.</p></div>
+      <div class="card c4 fx d1"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A59" stroke-width="1.8"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c1.6-3.4 4-5 7-5s5.4 1.6 7 5"/></svg></div><h3>Квалифицированный персонал</h3><p>Вежливое и внимательное обслуживание в кафе, банкетном зале, на стойке регистрации и на территории лаунжа.</p></div>
+      <div class="card c4 fx d2"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF7A59" stroke-width="1.8"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Приятные лояльные цены</h3><p>SPA-дом от 160 р. за 3 часа для компании до 8 человек, бесплатный паркинг для гостей отеля, лояльные цены на банкеты.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk tint">
+  <div class="wrap">
+    <div class="kick">Фото комплекса</div>
+    <h2>Увидеть <em>одним взглядом</em></h2>
+    <div class="ph-strip fx">
+      <div class="ph"><img src="img/hotel/2.jpg" alt="Интерьер гостиницы Светлана" loading="lazy"></div>
+      <div class="ph"><img src="img/cafe/1.jpg" alt="Кафе Светлана" loading="lazy"></div>
+      <div class="ph"><img src="img/banquet/1.jpg" alt="Банкетный зал" loading="lazy"></div>
+      <div class="ph"><img src="img/spa/1.jpg" alt="SvetlanaSPA" loading="lazy"></div>
+      <div class="ph"><img src="img/hotel/4.jpg" alt="Номер гостиницы" loading="lazy"></div>
+      <div class="ph"><img src="img/lounge/1.jpg" alt="СветланаЛаунж" loading="lazy"></div>
+      <div class="ph"><img src="img/park/1.jpg" alt="Паркинг" loading="lazy"></div>
+      <div class="ph"><img src="img/spa/2.jpg" alt="SPA терраса" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+</main>
+<!-- ===================== HOTEL ===================== -->
+<main id="p-hotel" class="page">
+<section class="phero">
+  <img src="img/hotel_hero.jpg" alt="Гостиница Светлана — фасад и номера">
+  <div class="wrap"><div class="kick">Гостиница</div><h1>20 номеров — забронировать, снять</h1><p class="lead">Номера построены в 2016 году, <b>реновация 2024-го</b> — всё для комфортного отдыха в дизайнерском исполнении. Заселение круглосуточно, выезд до 12:00.</p></div>
+</section>
+<section class="blk"><div class="wrap">
+  <div class="grid">
+    <div class="c6 fx">
+      <h2 style="font-size:26px">В каждом номере</h2>
+      <ul class="tick" style="margin-top:16px">
+        <li>Современный интерьер в разнообразном дизайнерском исполнении</li>
+        <li>Натуральное постельное бельё из 100%-го хлопка</li>
+        <li>Удобная кровать с ортопедическим матрацем</li>
+        <li>Бесплатный Wi-Fi</li>
+        <li>ЖК-телевизор, спутниковое и IP-ТВ высокой чёткости</li>
+        <li>Ванная комната с душевой кабиной</li>
+        <li>Мягкие натуральные полотенца</li>
+        <li>Индивидуальная косметика</li>
+      </ul>
+    </div>
+    <div class="c6 fx d1">
+      <div class="ph-big"><img src="img/hotel/10.jpg" alt="Номер гостиницы Светлана" loading="lazy"><span class="ph-cap">номерной фонд · после реновации 2024</span></div>
+    </div>
+  </div>
+  <h2 style="font-size:26px;margin-top:44px">Категории номеров</h2>
+  <div class="grid" style="margin-top:18px">
+    <div class="card c4 fx"><h3>«Сингл» Single</h3><p>Однокомнатный одноместный номер — для ночлега в пути.</p></div>
+    <div class="card c4 fx d1"><h3>«Дабл» Double</h3><p>Однокомнатный двухместный с большой двуспальной кроватью.</p></div>
+    <div class="card c4 fx d2"><h3>«Твин» Twin</h3><p>Двухместный с раздельными кроватями — для коллег или друзей.</p></div>
+    <div class="card c6 fx"><h3>Повышенной комфортности</h3><p>Интерьер в классическом стиле, большая двуспальная кровать, ЖК-телевизор 42”, халаты, тапочки, фен и расширенный набор индивидуальной косметики.</p></div>
+    <div class="card c6 fx d1"><h3>Семейный 2+2</h3><p>Для проживания двух взрослых с двумя детьми: двуспальная кровать и диван-кровать. Идеален для путешествий семьёй.</p></div>
+  </div>
+  <div class="grid" style="margin-top:26px">
+    <div class="card c8 fx">
+      <h2 style="font-size:22px;margin-bottom:12px">Дополнительные услуги</h2>
+      <div class="grid" style="gap:10px">
+        <ul class="tick c6"><li>Завтрак (за доп. плату в стоимость номера)</li><li>Паркинг для гостей — БЕСПЛАТНО (легковой автомобиль)</li><li>Трансфер</li></ul>
+        <ul class="tick c6"><li>Факс / ксерокс / сканер</li><li>RUM-сервис</li><li>Договор для юридических лиц и публичная оферта</li></ul>
+      </div>
+    </div>
+    <div class="card c4 fx d1" style="display:flex;flex-direction:column;justify-content:center;text-align:center">
+      <div style="font-family:var(--serif);font-size:30px;color:var(--acc)">24/7</div>
+      <p style="margin:8px 0 16px">заселение круглосуточно<br>выезд до 12:00</p>
+      <a href="tel:+375447560555" class="btn btn-acc">Узнать наличие номеров</a>
+    </div>
+  </div>
+</div></section>
+<section class="blk tint"><div class="wrap">
+  <div class="kick">Фото номеров</div>
+  <h2>Интерьеры <em>после реновации</em></h2>
+  <div class="ph-strip fx">
+    <div class="ph"><img src="img/hotel/1.jpg" alt="Номер Светлана" loading="lazy"></div>
+    <div class="ph"><img src="img/hotel/5.jpg" alt="Номер Светлана" loading="lazy"></div>
+    <div class="ph"><img src="img/hotel/8.jpg" alt="Номер Светлана" loading="lazy"></div>
+    <div class="ph"><img src="img/hotel/11.jpg" alt="Номер Светлана" loading="lazy"></div>
+    <div class="ph"><img src="img/hotel/12.jpg" alt="Номер Светлана" loading="lazy"></div>
+    <div class="ph"><img src="img/hotel/13.jpg" alt="Номер Светлана" loading="lazy"></div>
+    <div class="ph"><img src="img/hotel/14.jpg" alt="Номер Светлана" loading="lazy"></div>
+    <div class="ph"><img src="img/hotel/9.jpg" alt="Холл гостиницы" loading="lazy"></div>
+  </div>
+</div></section>
+</main>
+
+<!-- ===================== CAFE ===================== -->
+<main id="p-cafe" class="page">
+<section class="phero">
+  <img src="img/cafe_hero.jpg" alt="Кафе Светлана — зал и терраса">
+  <div class="wrap"><div class="kick">Кафе · 07:00–01:00</div><h1>Кафе на любой вкус</h1><p class="lead">Блюда <b>традиционной национальной кухни</b> и кухни разных народов мира. Основной зал размещает <b>до 150 гостей</b>.</p></div>
+</section>
+<section class="blk"><div class="wrap">
+  <div class="grid">
+    <div class="c6 fx">
+      <h2 style="font-size:26px">Форматы и услуги</h2>
+      <ul class="tick" style="margin-top:16px">
+        <li>Банкеты, фуршеты, корпоративные вечера</li>
+        <li>Кофе-паузы и кейтеринг</li>
+        <li>Летняя терраса с мангальной зоной — с мая по октябрь</li>
+        <li>Wi-Fi зона и спутниковое ТВ</li>
+        <li>Отличная музыка и ненавязчивый интерьер</li>
+        <li>По-настоящему вкусная и быстро приготовленная домашняя пища</li>
+      </ul>
+      <div class="h-cta">
+        <a href="tel:+375296370910" class="btn btn-acc">+375 29 637-09-10</a>
+        <a href="tel:+375256370910" class="btn btn-ghost">+375 25 637-09-10</a>
+      </div>
+      <p style="margin-top:14px;font-size:13px;color:var(--mut)">Телефоны для предварительных заказов · кафе работает Пн–Вс с 7:00 до 1:00</p>
+    </div>
+    <div class="c6 fx d1">
+      <div class="ph-big"><img src="img/cafe/1.jpg" alt="Зал кафе Светлана" loading="lazy"><span class="ph-cap">основной зал · до 150 гостей</span></div>
+      <div class="ph-strip" style="margin-top:12px">
+        <div class="ph"><img src="img/cafe/2.jpg" alt="Блюда кафе Светлана" loading="lazy"></div>
+        <div class="ph"><img src="img/cafe/3.jpg" alt="Блюда кафе Светлана" loading="lazy"></div>
+        <div class="ph"><img src="img/cafe/4.jpg" alt="Кафе Светлана" loading="lazy"></div>
+        <div class="ph"><img src="img/cafe/5.jpg" alt="Кафе Светлана" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<!-- ===================== BANQUET ===================== -->
+<main id="p-banquet" class="page">
+<section class="phero">
+  <img src="img/banquet_hero.jpg" alt="Банкетный караоке-зал Светлана">
+  <div class="wrap"><div class="kick">Банкетный зал · 24 места</div><h1>Банкетный караоке-зал</h1><p class="lead">Уютный зал в <b>классическом стиле</b> на 24 посадочных места: банкеты, фуршеты, корпоративные вечера и караоке.</p></div>
+</section>
+<section class="blk"><div class="wrap">
+  <div class="grid">
+    <div class="c6 fx">
+      <h2 style="font-size:26px">Чем запомнится торжество</h2>
+      <ul class="tick" style="margin-top:16px">
+        <li>Приятный декор и классический стиль зала</li>
+        <li>Вежливое и внимательное обслуживание + великолепная кухня</li>
+        <li>Многофункциональная мультимедийная система с доступом к сети Интернет</li>
+        <li>КАРАОКЕ — гости не заскучают ни на минуту</li>
+        <li>Корпоративы, юбилеи, дни рождения и любые другие мероприятия</li>
+      </ul>
+      <div class="h-cta">
+        <a href="tel:+375299993948" class="btn btn-acc">Заказать банкет</a>
+      </div>
+      <p style="margin-top:14px;font-size:13px;color:var(--mut)">Предварительные заказы для жителей и гостей Пинска: +375 29 999-39-48</p>
+    </div>
+    <div class="c6 fx d1">
+      <div class="ph-strip">
+        <div class="ph"><img src="img/banquet/1.jpg" alt="Банкетный зал" loading="lazy"></div>
+        <div class="ph"><img src="img/banquet/2.jpg" alt="Банкетный зал" loading="lazy"></div>
+        <div class="ph"><img src="img/banquet/3.jpg" alt="Банкетный зал" loading="lazy"></div>
+        <div class="ph"><img src="img/banquet/4.jpg" alt="Банкетный зал" loading="lazy"></div>
+      </div>
+      <div class="ph-strip" style="margin-top:12px">
+        <div class="ph"><img src="img/banquet/5.jpg" alt="Банкетный зал" loading="lazy"></div>
+        <div class="ph"><img src="img/banquet/6.jpg" alt="Банкетный зал" loading="lazy"></div>
+        <div class="ph"><img src="img/banquet/7.jpg" alt="Банкетный зал" loading="lazy"></div>
+        <div class="ph"><img src="img/banquet/8.jpg" alt="Банкетный зал" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<!-- ===================== PARKING ===================== -->
+<main id="p-parking" class="page">
+<section class="phero">
+  <img src="img/park_hero.jpg" alt="Охраняемый паркинг Светлана">
+  <div class="wrap"><div class="kick">Паркинг · круглосуточно</div><h1>Паркинг у трассы</h1><p class="lead">Временное размещение транспорта <b>всех модификаций и любых габаритов</b>: 50 грузовых и 25 легковых машиномест. Охрана в ночное время.</p></div>
+</section>
+<section class="blk"><div class="wrap">
+  <div class="grid">
+    <div class="c6 fx">
+      <h2 style="font-size:26px">Сопутствующие услуги</h2>
+      <ul class="tick" style="margin-top:16px">
+        <li>Питание и ночлег на территории комплекса</li>
+        <li>Душ / туалет (WC)</li>
+        <li>Бесплатный Wi-Fi</li>
+        <li>Телефон / факс, сканер / копир</li>
+        <li>Видеонаблюдение для безопасности водителей и грузов</li>
+        <li>Бесплатный запас воды в дорогу</li>
+        <li>АЗС и АГЗС рядом — отстой без отклонения от маршрута</li>
+      </ul>
+      <p style="margin-top:18px;font-size:15px;color:#C9C2B4">Развязка автодорог <b>М10 · Р6 · Р8</b> — удобное расположение для транзитных автопутешественников и дальнобойщиков.</p>
+      <div class="h-cta">
+        <a href="tel:+375447560555" class="btn btn-acc">+375 44 567-05-55</a>
+      </div>
+      <p style="margin-top:14px;font-size:13px;color:var(--mut)">Наличие мест, бронирование паркинга, отеля и заказ в кафе — по единому телефону</p>
+    </div>
+    <div class="c6 fx d1">
+      <div class="ph-big"><img src="img/park/1.jpg" alt="Паркинг Светлана" loading="lazy"><span class="ph-cap">50 грузовых + 25 легковых мест</span></div>
+      <div class="grid" style="margin-top:12px">
+        <div class="card c6 fx" style="text-align:center"><div style="font-family:var(--serif);font-size:34px;color:var(--acc)">50</div><p>грузовых машиномест</p></div>
+        <div class="card c6 fx" style="text-align:center"><div style="font-family:var(--serif);font-size:34px;color:var(--acc)">25</div><p>легковых машиномест</p></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+</main>
+<!-- ===================== LOUNGE ===================== -->
+<main id="p-lounge" class="page">
+<section class="phero">
+  <img src="img/lounge_hero.jpg" alt="СветланаЛаунж — территория отдыха">
+  <div class="wrap"><div class="kick">СветланаЛаунж · охраняемая территория</div><h1>Лаунж: от детских праздников до свадеб</h1><p class="lead">Загородный отдых с максимальным комфортом: барбекю-комплекс, зона очага, фонтан hand-made, детская площадка и <b>белоснежная ротонда для выездных бракосочетаний</b>.</p></div>
+</section>
+<section class="blk"><div class="wrap">
+  <div class="grid">
+    <div class="c6 fx">
+      <h2 style="font-size:26px">Территория отдыха</h2>
+      <ul class="tick" style="margin-top:16px">
+        <li>Уличный барбекю-комплекс с печью для казана и мойкой</li>
+        <li>Барбекю-зона, камин и костровый очаг — с дровами и средствами розжига</li>
+        <li>Зона очага с мягкими диванами и пледами для романтических посиделок</li>
+        <li>Эксклюзивный фонтан ручной работы в стиле «high tech»</li>
+        <li>Детский игровой комплекс: горки, качели, батут с безопасным ограждением</li>
+        <li>Санузел с сенсорными системами «no touch»</li>
+      </ul>
+      <h2 style="font-size:24px;margin-top:26px">Ротонда для бракосочетаний</h2>
+      <p style="color:#C9C2B4;font-weight:300;max-width:520px">Отдельный, абсолютно эксклюзивный объект для выездных свадеб на открытом воздухе. Классический монументальный стиль, белоснежный цвет — в гармонии со свадебным нарядом. Вечерняя иллюминация придаст фотосессиям незабываемый антураж.</p>
+      <p style="margin-top:14px;font-size:14px;color:var(--mut)">Администрация идёт навстречу каждому клиенту и оказывает широкий спектр дополнительных услуг. Ваш отдых — наша забота!</p>
+    </div>
+    <div class="c6 fx d1">
+      <div class="ph-big"><img src="img/lounge/1.jpg" alt="СветланаЛаунж" loading="lazy"><span class="ph-cap">территория лаунжа</span></div>
+      <div class="ph-strip" style="margin-top:12px">
+        <div class="ph"><img src="img/lounge/2.jpg" alt="СветланаЛаунж" loading="lazy"></div>
+        <div class="ph"><img src="img/lounge/3.jpg" alt="СветланаЛаунж" loading="lazy"></div>
+        <div class="ph"><img src="img/lounge/4.jpg" alt="СветланаЛаунж" loading="lazy"></div>
+        <div class="ph"><img src="img/lounge/5.jpg" alt="СветланаЛаунж" loading="lazy"></div>
+      </div>
+      <div class="ph-strip" style="margin-top:12px">
+        <div class="ph"><img src="img/lounge/6.jpg" alt="СветланаЛаунж" loading="lazy"></div>
+        <div class="ph"><img src="img/lounge/7.jpg" alt="СветланаЛаунж" loading="lazy"></div>
+        <div class="ph"><img src="img/lounge/8.jpg" alt="СветланаЛаунж" loading="lazy"></div>
+        <div class="ph"><img src="img/lounge/9.jpg" alt="СветланаЛаунж" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<!-- ===================== SPA ===================== -->
+<main id="p-spa" class="page">
+<section class="phero">
+  <img src="img/spa_hero.jpg" alt="SvetlanaSPA — гостевой дом в стиле loft">
+  <div class="wrap"><div class="kick">SvetlanaSPA · loft · до 12 гостей</div><h1>SPA-дом с камином и джакузи</h1><p class="lead">Современный гостевой дом в стиле loft для отдыха компанией. Парная, камин на дровах, терраса с <b>джакузи с подогревом</b> — и контраст снегопада с бурлящей тёплой водой зимой.</p></div>
+</section>
+<section class="blk"><div class="wrap">
+  <div class="grid">
+    <div class="c6 fx">
+      <h2 style="font-size:26px">В доме и на террасе</h2>
+      <ul class="tick" style="margin-top:16px">
+        <li>Основной зал с мини-кухней: холодильник, микроволновая печь, посуда, разделочный инвентарь, раковина</li>
+        <li>Большой стол из массива дуба</li>
+        <li>Камин на дровах, телевидение, Wi-Fi, кондиционирование</li>
+        <li>Парная с большой вместимостью — по рекомендациям лучших практик</li>
+        <li>Собственная терраса с видом на территорию</li>
+        <li>Гидромассажная ванна-джакузи с подогревом (отдельно оплачивается)</li>
+        <li>Собственный мангал для блюд на открытом огне</li>
+      </ul>
+      <h2 style="font-size:24px;margin-top:26px">Банные аксессуары и сервис</h2>
+      <p style="color:#C9C2B4;font-weight:300;max-width:520px">Веники, шапки, тапочки для сауны, полотенца, простыни и гигиенические наборы — можно приобрести на месте. По желанию — доставка блюд и напитков из кафе комплекса.</p>
+      <div class="h-cta">
+        <a href="tel:+375447560555" class="btn btn-acc">Забронировать SPA</a>
+      </div>
+    </div>
+    <div class="c6 fx d1">
+      <div class="ph-big"><img src="img/spa/1.jpg" alt="SvetlanaSPA — зал" loading="lazy"><span class="ph-cap">гостевой дом · стиль loft</span></div>
+      <div class="grid" style="margin-top:12px">
+        <div class="card c6 fx"><div style="font-family:var(--serif);font-size:26px;color:var(--acc)">160 р.</div><p>минимально — 3 часа отдыха для компании до 8 человек</p></div>
+        <div class="card c6 fx d1"><div style="font-family:var(--serif);font-size:26px;color:var(--acc)">+35 р.</div><p>каждый дополнительный гость</p></div>
+        <div class="card c6 fx"><div style="font-family:var(--serif);font-size:26px;color:var(--acc)">+50 р.</div><p>каждый дополнительный час пребывания (по согласованию)</p></div>
+        <div class="card c6 fx d1"><div style="font-family:var(--serif);font-size:26px;color:var(--acc)">95 р.</div><p>джакузи — 3 часа (оплачивается отдельно)</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="ph-strip fx" style="margin-top:30px">
+    <div class="ph"><img src="img/spa/2.jpg" alt="SvetlanaSPA" loading="lazy"></div>
+    <div class="ph"><img src="img/spa/3.jpg" alt="SvetlanaSPA" loading="lazy"></div>
+    <div class="ph"><img src="img/spa/4.jpg" alt="SvetlanaSPA" loading="lazy"></div>
+    <div class="ph"><img src="img/spa/5.jpg" alt="SvetlanaSPA" loading="lazy"></div>
+  </div>
+</div></section>
+</main>
+
+<!-- ===================== CONTACTS ===================== -->
+<main id="p-contacts" class="page">
+<section class="phero">
+  <img src="img/hotel_hero.jpg" alt="ГК Светлана — контакты">
+  <div class="wrap"><div class="kick">Контакты</div><h1>Как нас найти</h1><p class="lead">420-й километр трассы М-10, деревня Посеничи, Пинский район. GPS: <b>N 52.177131, E 26.058800</b>.</p></div>
+</section>
+<section class="blk"><div class="wrap">
+  <div class="con">
+    <div class="fx">
+      <div class="ctel">
+        <a href="tel:+375447560555"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#FF7A59" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg>+375 44 756-05-55</a>
+        <a href="tel:+375299993948"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#FF7A59" stroke-width="1.8"><path d="M4 4h16v12H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg>+375 29 999-39-48</a>
+        <a href="tel:+375165672828"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#FF7A59" stroke-width="1.8"><path d="M12 3a9 9 0 019 9 9 9 0 01-9 9H6l-3 3v-6a9 9 0 019-15z"/></svg>+375 165 67-28-28</a>
+      </div>
+      <div class="crow"><b>Гостиница, лаунж, SPA:</b><span>+375 44 756-05-55</span></div>
+      <div class="crow"><b>Кафе (07:00–24:00):</b><span>+375 29 999-39-48 · заказы: +375 29 637-09-10, +375 25 637-09-10</span></div>
+      <div class="crow"><b>Почта:</b><span>svetlana-complex@mail.ru</span></div>
+      <div class="crow"><b>Адрес:</b><span>225750, Брестская обл., Пинский р-н, д. Посеничи, 420-й км трассы М10</span></div>
+      <div class="crow"><b>GPS:</b><span>N 52.177131, E 26.058800</span></div>
+      <div class="crow"><b>Время работы:</b><span>Пн–Вс 07:00–01:00 · заселение в отель круглосуточно</span></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px">
+        <a href="https://www.facebook.com/profile.php?id=100087731838714" target="_blank" rel="noopener" class="btn btn-ghost">Facebook</a>
+        <a href="https://instagram.com/banya_pinsk_svetlana" target="_blank" rel="noopener" class="btn btn-ghost">Instagram</a>
+        <a href="https://ok.ru/profile/571851712323" target="_blank" rel="noopener" class="btn btn-ghost">Одноклассники</a>
+        <a href="https://vk.com/svetlanalounge" target="_blank" rel="noopener" class="btn btn-ghost">ВКонтакте</a>
+      </div>
+      <p style="margin-top:22px;font-size:12.5px;color:var(--mut);border-left:2px solid var(--acc);padding-left:14px">«Внимание! На всей территории гостиничного комплекса «Светлана» ведётся видеонаблюдение с аудиофиксацией».</p>
+    </div>
+    <div class="fx d1">
+      <form id="jform" novalidate>
+        <h3 style="font-size:22px;margin-bottom:16px">Заявка на бронирование</h3>
+        <div class="frm">
+          <div><label for="f-name">Ваше имя</label><input id="f-name" name="name" required placeholder="Как к вам обращаться"></div>
+          <div><label for="f-tel">Телефон</label><input id="f-tel" name="tel" required placeholder="+375 __ ___-__-__"></div>
+          <div><label for="f-type">Что интересует</label>
+            <select id="f-type" name="type">
+              <option>Номер в гостинице</option>
+              <option>Столик / заказ в кафе</option>
+              <option>Банкетный зал с караоке</option>
+              <option>Место на паркинге</option>
+              <option>СветланаЛаунж (праздник)</option>
+              <option>SvetlanaSPA-дом</option>
+            </select>
+          </div>
+          <div><label for="f-msg">Комментарий</label><textarea id="f-msg" name="msg" placeholder="Например: двухместный номер на 2 ночи с 21-го, нужен завтрак"></textarea></div>
+          <button class="btn btn-acc" type="submit" style="width:100%">Отправить заявку</button>
+          <div class="ok-msg" id="fok">Спасибо! Перезвоним и подтвердим бронирование.</div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <div class="lg-t" style="font-family:var(--serif);font-size:19px;color:var(--paper)">СВЕТ<i style="font-style:normal;color:var(--acc)">ЛАНА</i></div>
+        <div class="mono" style="font-size:11px;margin-top:5px">гостиничный комплекс · Пинский р-н · М-10 · 420-й км</div>
+      </div>
+      <div style="display:flex;gap:20px;flex-wrap:wrap">
+        <a href="#hotel">Гостиница</a><a href="#cafe">Кафе</a><a href="#banquet">Банкетный зал</a><a href="#parking">Паркинг</a><a href="#lounge">Лаунж</a><a href="#spa">SPA</a><a href="#contacts">Контакты</a>
+      </div>
+      <div><a href="tel:+375447560555" style="color:var(--acc);font-family:var(--serif);font-size:18px">+375 44 756-05-55</a></div>
+    </div>
+    <div class="wm-line mono" style="font-size:11px">
+      <span>ГК «Светлана» · 225750, Брестская обл., Пинский р-н, д. Посеничи, 420-й км М-10 · svetlana-complex@mail.ru</span>
+      <span>Макет подготовлен SiteFast.by</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-fab" href="https://wa.me/375447560555" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="17" height="17" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.4 14.1c-.2.7-1.3 1.3-1.8 1.3-.5.1-1.1.1-1.8-.1a13 13 0 01-4.2-2.6 11 11 0 01-2.3-3.5c-.2-.6-.3-1.2-.1-1.7.2-.5.9-1.2 1.4-1.2.3 0 .6 0 .8.6l.7 1.6c.1.2 0 .5-.1.7l-.4.6c-.1.2-.2.3 0 .6.5.9 1.1 1.6 2 2.2.6.5 1.1.8 1.6 1 .3.1.5 0 .6-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.5.2.4.5.4.7z"/></svg>
+  <span>WhatsApp</span>
+</a>
+<script>
+/* ===== ПРЕЛОАДЕР ===== */
+(function(){
+  var word='СВЕТЛАНА', w=document.getElementById('ldword');
+  for(var i=0;i<word.length;i++){
+    var s=document.createElement('span');
+    s.textContent=word[i];
+    if(i>=4) s.className='lv';
+    s.style.animationDelay=(0.1+i*0.08)+'s';
+    w.appendChild(s);
+  }
+  var bar=document.getElementById('ldbar'), pct=document.getElementById('ldpct');
+  var p=0;
+  var iv=setInterval(function(){
+    p+=Math.random()*9+3;
+    if(p>=100){ p=100; clearInterval(iv); setTimeout(done,350); }
+    bar.style.width=p+'%'; pct.textContent=Math.round(p)+'%';
+  },110);
+  function done(){ document.getElementById('loader').classList.add('done'); document.body.classList.add('lddone'); }
+})();
+
+/* ===== роутер ===== */
+var PAGES=['home','hotel','cafe','banquet','parking','lounge','spa','contacts'];
+function showPage(id){
+  if(PAGES.indexOf(id)<0) id='home';
+  var pages=document.querySelectorAll('.page');
+  for(var i=0;i<pages.length;i++) pages[i].classList.remove('on');
+  var el=document.getElementById('p-'+id); if(el) el.classList.add('on');
+  var links=document.querySelectorAll('nav.main a');
+  for(var j=0;j<links.length;j++) links[j].classList.toggle('on', links[j].getAttribute('data-r')===id);
+  window.scrollTo(0,0);
+  document.getElementById('nav').classList.remove('open');
+  setTimeout(scanReveal,60);
+  setTimeout(scanReveal,600);
+}
+window.addEventListener('hashchange',function(){ showPage(location.hash.replace('#','')); });
+document.getElementById('burger').addEventListener('click',function(){ document.getElementById('nav').classList.toggle('open'); });
+document.querySelectorAll('[data-go]').forEach(function(a){ a.addEventListener('click',function(){ if(a.getAttribute('href').indexOf('#')===0){ location.hash=a.getAttribute('href'); document.getElementById('nav').classList.remove('open'); } }); });
+
+/* ===== reveal polling ===== */
+document.body.classList.add('js');
+var revealedAll=false;
+function scanReveal(){
+  if(revealedAll) return;
+  var els=document.querySelectorAll('.fx:not(.in)');
+  var vh=window.innerHeight||800;
+  for(var i=0;i<els.length;i++){
+    var r=els[i].getBoundingClientRect();
+    if(r.top<vh-40&&r.bottom>0) els[i].classList.add('in');
+  }
+  if(els.length===0) revealedAll=true;
+}
+setInterval(scanReveal,400); scanReveal();
+showPage(location.hash.replace('#',''));
+
+/* ===== курсор ===== */
+(function(){
+  var c=document.getElementById('cdot'), r=document.getElementById('cring');
+  if(!c||!window.matchMedia('(pointer:fine)').matches) return;
+  var x=-100,y=-100,rx=-100,ry=-100;
+  document.addEventListener('mousemove',function(e){ x=e.clientX; y=e.clientY; c.style.left=x+'px'; c.style.top=y+'px'; });
+  (function loop(){ rx+=(x-rx)*.16; ry+=(y-ry)*.16; r.style.left=rx+'px'; r.style.top=ry+'px'; requestAnimationFrame(loop); })();
+  document.querySelectorAll('a,button,summary,.zcard,.card,.ph').forEach(function(el){
+    el.addEventListener('mouseenter',function(){ r.classList.add('big'); });
+    el.addEventListener('mouseleave',function(){ r.classList.remove('big'); });
+  });
+})();
+
+/* ===== 3D: hero-фон наклоняется за мышью ===== */
+(function(){
+  var bg=document.getElementById('herobg'); if(!bg) return;
+  if(!window.matchMedia('(pointer:fine)').matches) return;
+  var section=bg.closest('.hero');
+  section.addEventListener('mousemove',function(e){
+    var r=section.getBoundingClientRect();
+    var px=(e.clientX-r.left)/r.width-.5, py=(e.clientY-r.top)/r.height-.5;
+    bg.style.transform='rotateY('+(px*5).toFixed(2)+'deg) rotateX('+(-py*4).toFixed(2)+'deg) translate('+px*-14+'px,'+py*-10+'px)';
+  });
+  section.addEventListener('mouseleave',function(){ bg.style.transform=''; });
+})();
+
+/* ===== 3D: карточки-зоны наклоняются ===== */
+(function(){
+  if(!window.matchMedia('(pointer:fine)').matches) return;
+  document.querySelectorAll('.zcard').forEach(function(card){
+    card.addEventListener('mousemove',function(e){
+      var r=card.getBoundingClientRect();
+      var px=(e.clientX-r.left)/r.width-.5, py=(e.clientY-r.top)/r.height-.5;
+      card.style.transform='rotateY('+(px*12).toFixed(2)+'deg) rotateX('+(-py*10).toFixed(2)+'deg) translateZ(14px)';
+      var img=card.querySelector('img');
+      if(img) img.style.transform='scale(1.12) translate('+px*8+'px,'+py*6+'px)';
+    });
+    card.addEventListener('mouseleave',function(){
+      card.style.transform='';
+      var img=card.querySelector('img'); if(img) img.style.transform='';
+    });
+  });
+})();
+
+/* ===== форма ===== */
+(function(){
+  var f=document.getElementById('jform'); if(!f) return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var ok=true;
+    ['f-name','f-tel'].forEach(function(id){
+      var el=document.getElementById(id);
+      if(!el.value.trim()){ ok=false; el.style.borderColor='#E0492E'; }
+      else el.style.borderColor='';
+    });
+    if(!ok) return;
+    document.getElementById('fok').style.display='block';
+    f.reset();
+  });
+})();
+</script>
+<script>window.__ok=1;</script>
+</body>
+</html>
